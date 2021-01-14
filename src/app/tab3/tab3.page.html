@@ -1,0 +1,23 @@
+<ion-header [translucent]="true" class="ion-header">
+  <ion-title class="ion-title"> NBA Champions </ion-title>
+</ion-header>
+
+<ion-content class="ion-content">
+
+  <ul>
+    <li *ngFor="let k of team">
+      <h1>{{k.year}}</h1>
+      <h2>{{k.name}}</h2>
+      <div class="imgContainer">
+        <img src={{k.img}} alt="">
+      </div>
+      <h3>{{k.tag}}</h3>
+      <ul>
+        <li *ngFor="let j of k.players">
+          <p>{{j}}</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</ion-content>

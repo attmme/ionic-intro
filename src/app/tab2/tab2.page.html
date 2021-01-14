@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="ion-content">
+
+  <ion-header [translucent]="true" class="ion-header">
+    <ion-title class="ion-title"> Loose in the sky! </ion-title>
+    <ion-img src="../../assets/img/main.png"></ion-img>
+    <ion-label>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam libero voluptas rerum
+      praesentium.
+      Voluptate dolor, error officiis suscipit culpa maiores quam corporis tempora dolore voluptates similique
+      temporibus architecto incidunt.
+    </ion-label>
+  </ion-header>
+
+  <article>
+    <ion-title>Comments:</ion-title>
+    <div class="espai"></div>
+  </article>
+
+  <article class="individuals">
+    <section *ngFor="let el of arrayContingut">
+      <div class="nameDate">
+        <h2>{{ el.nom }}</h2>
+        <p>{{ el.data }}</p>
+      </div>
+      <p>{{ el.text }}</p>
+    </section>
+  </article>
+
+  <article class="caixa">
+
+    <h3>Add your comment</h3>
+    <div class="espai"></div>
+
+    <form action="">
+      <label for="">Name: </label>
+      <input type="text">
+
+      <label for="">Description: </label>
+      <textarea name="" rows="6"></textarea>
+
+    </form>
+
+    <button>Submit</button>
+  </article>
+
+</ion-content>

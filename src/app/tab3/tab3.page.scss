@@ -1,0 +1,77 @@
+@import '../reset.css';
+
+@media (min-width: 1099px) {
+    .ion-content > ul > li {
+        width: 33%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .ion-content > ul > li {
+        width: 100%;
+    }
+}
+
+
+.ion-content {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        li {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 80px;
+
+            h1 {
+                margin-bottom: 35px;
+                font-size: 34px;
+                font-weight: bold;
+            }
+
+            h2 {
+                margin-bottom: 25px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            .imgContainer {
+                display: flex;
+                align-items: center;
+                height: 250px;
+
+                img {
+                    margin-bottom: 20px;
+                    width: 200px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                width: 45%;
+
+                li {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 4px;
+
+                    p {
+                        display: flex;
+                        display: list-item;
+                        align-self: flex-start;
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+    }
+}

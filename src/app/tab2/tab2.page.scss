@@ -1,0 +1,79 @@
+$barColor: #5f9ea0;
+$colorComments: #e9ecef;
+$btnColor: #17a2b8;
+
+.ion-content {
+    .ion-header {
+        .ion-title {
+            text-align: center;
+        }
+    }
+
+    .espai {
+        width: 554px;
+        height: 2px;
+        background-color: $barColor;
+    }
+
+    .individuals {
+        margin-left: 20px;
+
+        .nameDate {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+
+                font-weight: bold;
+                margin-right: 10px;
+            }
+
+            p {
+            }
+        }
+    }
+
+    .caixa {
+            grid-area: el4;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-self: center;
+            padding: 60px 20px 60px 20px;
+            margin-top: 20px;
+            background-color: $colorComments;
+        
+            .espai {
+                width: 100%;
+                margin-bottom: 10px;
+        
+            }
+        
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+        
+                input, textarea {
+                    margin: 10px 0 10px 0;
+                    border: 1px solid #cecece;
+                }
+        
+                input {
+                    height: 25px;
+                }
+            }
+        
+            button {
+                padding: 8px;
+                border: 0;
+                font-size: 17px;
+                border-radius: 4px;
+                color: white;
+                background-color: $btnColor;
+            }
+    }
+}

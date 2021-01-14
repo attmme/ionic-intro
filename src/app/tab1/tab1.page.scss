@@ -1,0 +1,40 @@
+@import "../reset.css";
+
+$mainColor: #f67878;
+$imgColor: #d3d3d3;
+$bgHeadColor: #333333;
+
+.ion-header {
+    padding: 50px;
+    background-color: $bgHeadColor;
+    .ion-title {
+        font-size: 26px;
+        background-color: $bgHeadColor;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.ion-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: $mainColor;
+    height: 100%;
+
+    .ion-row {
+        .ion-col {
+            display: flex;
+            flex-direction: column;
+            .ion-img {
+                padding: 10px;
+                background-color: $imgColor;
+            }
+            .ion-label {
+                color: white;
+            }
+        }
+    }
+}
